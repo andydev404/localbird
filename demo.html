@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LocalBird</title>
+</head>
+
+<body>
+  <h1>Look your LocalStorage</h1>
+  <script src="localbird.js"></script>
+  <script>
+    const bird = new localbird;
+    bird.post('city', ['Santiago', 'Sosua', 'La vega']).then(data => {
+      console.log(data)
+    })
+    // bird.get('city').then(data => console.log(data));
+    // bird.delete('city').then(data => console.log(data));
+    // bird.deleteProperty('city', 'La vega').then(data => console.log(data))
+    // bird.deleteAll()
+  </script>
+</body>
+
+</html>
